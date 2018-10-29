@@ -1,0 +1,395 @@
+
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+    padding: 10px;
+    margin-left: 5px;
+    padding-bottom: 0;
+    font-family: 'KoHo', sans-serif;
+    font-weight: bold;
+}
+
+/* ------------- header --------------------- */
+header{
+    display: flex;
+    flex-direction: row;
+    height:5vh ;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 0.5%;
+}
+header ul{
+    list-style: none;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-content: space-around;
+    padding-right: 2%;
+}
+header li{
+    margin: 20px ;
+}
+header ul, header p{
+    font-size: 20px;
+    font-weight: bold;
+}
+header li:hover{
+    color: #EB3E4A;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+}
+header > img{
+    height: 8vh;
+    width: auto;
+    margin-top: 0;
+    cursor: pointer;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: nowrap;
+    height: 87vh;
+}
+
+/* ------------- footer --------------------- */
+footer{
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    color: rgba(128, 128, 128, 0.87);
+    margin: 0.2% 0;
+    font-size: 1vw
+}
+
+
+/* ------------- left bar --------------------- */
+.leftbar{
+    width: 5vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+}
+.leftbar > p{
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    margin: 20px;
+    padding: 0;
+    font-size: 24px;
+}
+p:nth-child(2){
+    order: -1;
+    align-self: flex-start;
+}
+
+/* ------------- right bar --------------------- */
+.rightbar{
+    width: 5vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: space-around;
+}
+.rightbar  i{
+    color: black;
+    padding: 15px ;
+    font-size: 20px;
+}
+.fab:hover{
+    border-radius: 10px;
+    color: white;
+    background-color: #EB3E4A;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+
+/* ------------- main content --------------------- */
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80vw;
+    height: 77vh;
+}
+.content {
+    width: 80vw;
+    height: 85vh;
+    margin: 15px 0;
+}
+/* ------------- landing Page --------------------- */
+.landingPage{
+    display: flex;
+    flex-direction: row;
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+}
+.landingPage p:last-child{
+    align-self: center;
+}
+.arch{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-start;
+    background-color: #EB3E4A;
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-size: 20vw;
+}
+.dev{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+    color: #EB3E4A;
+    font-size: 20vw;
+    
+}
+.landingPage>P:last-child{
+    font-size: 2vw;
+    width: 50vw;
+    text-align: center;
+    color: rgba(168, 164, 164, 0.801);
+    align-self: center;
+    position: relative;
+    bottom: 20vh;
+    left: 15vw;
+}
+.landingPage b{
+    margin: 2vh;
+    text-transform: uppercase;
+}
+.arch>* , .dev>*{
+    margin: 50px 0;
+    font-size: 50%;
+}
+
+
+/* ------------- about me --------------------- */
+.aboutMe{
+    background-color: rgb(147, 83, 81);
+    /* order: -1; */
+    background-image: url("../img/aboutme.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 10%;
+}
+.aboutMe>p:first-child{
+    font-size: 36px;
+    color: #21BEDA;
+    font-weight: bold;
+    order: -1;
+    margin-top: 11%;
+    margin-bottom: 2%;
+}
+.aboutMe>p:nth-child(2){
+    font-size: 18px;
+    color: #767A7B;
+    margin-bottom: 6%;
+}
+.aboutMe>p:nth-child(3){
+    width: 400px;
+    font-size: 18px;
+    color: #B1E3F0;
+    text-align: justify;
+}
+/* ------------- skills --------------------- */
+.skills{
+    background-image: url("../img/skills.jpg");
+    background-size: cover;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+.skills>section{
+    height: 55vh;
+    width: 15vw;
+}
+.skills section, .skills li{
+    background-color:rgba(235,62,74,0.25);
+    box-shadow: 4px 0 4px rgba(0, 0, 0, 0.25);
+    margin: 5px;
+}
+.skills>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    list-style: none;
+}
+.skills li{
+    width: 7vw;
+    height: 17.5vh;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.skillsbutton li{
+    box-sizing: border-box;
+    padding-top: 40%;
+    cursor: pointer;
+}
+.skillstab>P{
+    color: white;
+    text-align: center;
+    margin: 5%;
+    font-size: 2.1vw;
+    font-weight: bold;
+}
+.skillstab>p:nth-child(3n+3){    
+    font-size: 1.4vw;
+    font-weight: 500;
+    text-align: justify;
+    margin-top: 30%;
+}
+.front{
+    display: none;
+}
+.back{
+    display: none;
+}
+/* ------------- portfolio ----------------c----- */
+.portfolio{
+    background-image: url("../img/apartment-chair-contemporary-509922.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 3% 0;
+    box-sizing: border-box;
+}
+.frame{
+    width: 15vw;
+    height: 15vh;
+    background-color:rgba(235,62,74,0.25);
+    margin: 2%;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    padding: 1%;
+}
+.frame img{
+    /* height: inherit; */
+    width: inherit;
+    box-shadow: 4px 0 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+/* ------------- contact --------------------- */
+
+.contact{
+    background-image: url("../img/rawpixel-603009-unsplash.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+.contact div{
+    height: 30%;
+    width: 40%;
+    background-color:rgba(235,62,74,0.6);
+    box-shadow: 4px 0 4px rgba(0, 0, 0, 0.25);
+    padding: 10%;
+    margin: 10% auto;
+    color: white;
+}
+.contact p:first-child{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.contact p:nth-child(2){
+    color: #767A7B;
+    margin-bottom: 5%;
+}
+.contact p:nth-child(2n+4){
+    color: #767A7B;
+    margin-bottom: 5%;
+}
+
+
+/* .popup{
+    cursor: pointer;
+}
+.popup>.popupphoto{
+    visibility: hidden;
+    width: 160px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    z-index: 10;
+}
+.popup .show{
+    visibility: visible;
+} */
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 60%; /* Full width (cover the whole page) */
+    height: 40%; /* Full height (cover the whole page) */
+    top: 25vh; 
+    left: 20vw;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.overlay img{
+    height: 100%;
+    width: auto;
+    
+}
+.overlay>p{
+    font-size: 2vw;
+    color: #EB3E4A;
+    stroke: 1px #EB3E4A;
+    margin: 2wh;
+}
+.overlay p:last-child{
+    font-size: 1.2vw;
+    color: #767A7B;
+}

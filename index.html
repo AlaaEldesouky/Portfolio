@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Alaa_Eldesouky Architect/Developer</title>
+    <link rel="icon" href="assets/img/logo.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body onload="home()">
+    <header>
+        <img  onclick="landingpage(this)" src="assets/img/logo.png" alt="logo of architecture developer">
+        <nav>
+            <ul id="ul">
+                <li onclick="aboutme(this)">About</li>
+                <li onclick="skills(this)">Skills</li>
+                <li onclick="portfolio(this)">Portfolio</li>
+                <li onclick="contact(this)">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- left side bar -->
+        <aside class="leftbar">
+            <p>Alaa </p>
+            <p> Eldesouky</p>
+        </aside>
+        <!-- main content -->
+        <section id="container" class="container">
+            <section id="landingPage" class="content landingPage">
+                <div class="arch">
+                    <p>Archi</p>
+                </div>
+                <div class="dev">
+                    <p>loper</p>
+                </div>
+                <p>
+                    Programmers write code and Developers solve problems. <b>Architects build
+                    something even bigger.</b>
+                </p>
+            </section>
+            <section id="aboutMe" class="content aboutMe">
+                <p>ALAA ELDESOUKY</p>
+                <p>The story behind...</p>
+                <p>I am a Web Developer have experience in 3D Programmes based in Essen, Germany.
+                    <br>
+                    <br>
+                    I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not coding,
+                    Designing, you'll find me watching movies, or walking out in the park
+                </p>
+            </section>
+            <section id="skills" class="content skills">
+                <ul class="skillsbutton">
+                    <li id="designbutton" onclick="design()"><i class="fas fa-pen-nib"></i><br>Design</li>
+                    <li id="frontbutton" onclick="front()"><i class="fas fa-code"></i><br>Front-end</li>
+                    <li id="backbutton" onclick="back()"><i class="fas fa-database"></i><br>Back-end</li>
+                </ul>
+                <section class="skillstab">
+                    <p class="design">3D MAX</p>
+                    <p class="design">70%</p>
+                    <p class="design">3D modeling and rendering software helps you create massive worlds in games,
+                        stunning scenes for design visualization</p>
+                
+                    <p class="front">JS</p>
+                    <p class="front">40%</p>
+                    <p class="front">HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web.</p>
+
+                    <p class="back">SQL</p>
+                    <p class="back">40%</p>
+                    <p class="back"> is a domain-specific language used in programming and designed for managing data held in a relational database management system.</p>
+                    
+                </section>
+                <section  class="skillstab">
+                    <p class="design">AUTOCAD</p>
+                    <p class="design">80%</p>
+                    <p class="design">AutoCAD is a commercial computer-aided design and drafting software application.<br>
+                        Simulate and animate stunning 2D and 3D designs with AutoCAD.</p>
+                        
+                    <p class="front">HTML</p>
+                    <p class="front">80%</p>
+                    <p class="front">HTML is the standard markup language for creating Web pages.</p>
+    
+                    <p class="back">C#</p>
+                    <p class="back">40%</p>
+                    <p class="back">is a simple, modern, general-purpose, object-oriented programming language developed by Microsoft within its .NET initiative led by Anders Hejlsberg</p>    
+                </section>
+                <section class="skillstab">
+                        <p class="design">PHOTOSHOP</p>
+                        <p class="design">60%</p>
+                        <p class="design">Adobe Photoshop software is the industry standard in digital imaging and is used worldwide for design, photography, video editing and more</p>
+                
+                        <p class="front">CSS</p>
+                        <p class="front">70%</p>
+                        <p class="front">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML</p>
+        
+                        <p class="back">ASP.net</p>
+                        <p class="back">40%</p>
+                        <p class="back">is an open-source server-side web application framework designed for web development to produce dynamic web pages</p> 
+                
+                </section>
+            </section>
+            <section id="portfolio" class="content portfolio">
+                <section class="frame">
+                        <img onclick="on()" src="assets/img/0b81ac43321983.57eb0ad14cd3f.jpg">
+                        <div id="overlay" class="overlay" onclick="off()">
+                            <img src="assets/img/26113b43321983.57eb0ad14e5f1.jpg" alt="Business City">
+                            <p>P.S Business City</p>
+                            <p>Complete City, which you can settle for it.</p>
+                        </div>
+                </section>
+                <section class="frame">
+                    <img onclick="on1()" src="assets/img/751be443324419.57eb14d05a968.jpg">
+                    <div id="overlay1" class="overlay" onclick="off1()">
+                            <img src="assets/img/3d375143324419.57eb13ad23069.jpg" alt="Business City">
+                            <p>Residential building</p>
+                            <p></p>
+                        </div>
+                </section>
+                <section class="frame"></section>
+                <section class="frame"></section>
+                <section class="frame"></section>
+                <section class="frame"></section>
+                <section class="frame"></section>
+                <section class="frame"></section>
+            </section>
+            <section id="contact" class="content contact">
+                <div>
+                    <p>Get in Touch</p>
+                    <p>Your questions and special requests are always welcome.</p>
+                    <p>Email:</p>
+                    <p>alaa.ezz444@gmail.com</p>
+                    <p>Phone:</p>
+                    <p>+49 176 40497257/p>
+                        <p>Address</p>
+                        <p>Schadowstraße, 45147 Essen, Germany</p>
+                </div>
+            </section>
+        </section>
+        <!-- right side bar -->
+        <aside class="rightbar">
+            <a href="https://www.behance.net/alaa_ez_el5500"><i class="fab fa-behance"></i></a>
+            <a href="https://github.com/AlaaEldesouky"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/alaa-eldesouky-800954a8"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.xing.com/profile/Alaa_Eldesouky/cv?sc_o=mxb_p"><i class="fab fa-xing"></i></a>
+        </aside>
+    </main>
+    <footer>
+        <p> &copy;2018 Alaa Eldesouky</p>
+    </footer>
+</body>
+
+</html>
